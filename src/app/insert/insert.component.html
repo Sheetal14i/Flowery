@@ -1,0 +1,38 @@
+<div class="containerf">
+    <div class="rowf">
+       <div class="col-md-4 mx-auto">
+        <br><br>
+        <h2 id="head">Add new Flower</h2><br>
+          <div class="myform form ">
+             <form method="post" name="login" #insertform="ngForm" (ngSubmit)="insertflower(insertform)">
+                <div class="form-group">
+                   <input type="text" name="flowerid"  class="form-control my-input" id="name" placeholder="Type Id" #flowerid (ngModel)="flowerid">
+                </div><br>
+                <div class="form-group">
+                   <input type="email" name="flowername"  class="form-control my-input" id="email" placeholder="Type Name"#flowername (ngModel)="flowername">
+                </div><br>
+                <div class="form-group">
+                   <input type="number" min="0" name="flowerprice" id="phone"  class="form-control my-input" placeholder="Type Price"#flowerprice (ngModel)="flowerprice">
+                </div><br>
+                <div class="text-center ">
+                   <button type="submit" class=" btn btn-block send-button tx-tfm">flower insert into the Menu</button>
+                </div>
+                <div class="col-md-12 ">
+                   <div class="login-or">
+                      <hr class="hr-or">
+                      <span class="span-or">or</span>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <a class="btn btn-block g-button" routerLink="/member" routerLinkActive="active">Try More?</a>
+                   <br>
+                   <a class="btn btn-block g-button" routerLink="/view" routerLinkActive="active">No Thank You</a>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+ </div>
+
+
+  

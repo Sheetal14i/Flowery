@@ -1,0 +1,22 @@
+<div class="top">
+    <h2>Welcome to Flowery</h2>
+    <h3>Menu</h3>
+  </div>
+  <div align="center" class="main">
+    <table class="table table-striped">
+      <thead> 
+        <tr>
+          <th scope="col">Flower Id</th>
+          <th scope="col">Flower Name</th>
+          <th scope="col">Flower Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let f of data">
+          <td>{{f.flowerid}}</td>
+          <td>{{f.flowername}}</td>
+          <td>{{f.flowerprice}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
